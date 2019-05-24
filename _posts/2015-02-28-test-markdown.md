@@ -1,74 +1,31 @@
 ---
 layout: post
-title: Test markdown
-subtitle: Each post also has a subtitle
+title: Data visualisation using Dimuon event information derived from the run2010B public Mu dataset
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 ---
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
-**Here is some bold text**
+This is no way to be taken scientifically.
 
-## Here is a secondary heading
+I am not a particle physicists, rather a data science students and thought it would be interesting to look at muons.
 
-Here's a useless table:
+I was interested in looking at the energy level of Muons.
+My guess was that dimuons would show similar energy levels for the same number of event.
 
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+![Comparing total energy levels (momentum P) of both Muons](https://drive.google.com/file/d/1dbphvo5f1PlbUySGW4paImSRRN4nB0Xy/view?usp=sharing)
+
+Although E1 and E2 show similarities a correlation matrix test determined that their correlation was weak at only 5%.
+
+I noticed antimuons with a charge of Q = 1 when still in the data set and could be influencing the correlation results. Filtering for Q = -1 weakened the correlation results to 0%.
 
 
-How about a yummy crepe?
+![Comparing total energy levels (momentum P) of both Muons filtered for Q= -1](https://drive.google.com/file/d/1Dl1IWS9WYMSF3i0eW2sPZwsSNZuAFOEF/view?usp=sharing)
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+It is reasonable to conclude that no correlation is found in the energy levels of dimuons based on this dataset.
 
-Here's a code chunk:
 
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
 
-And here is the same code with syntax highlighting:
 
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
