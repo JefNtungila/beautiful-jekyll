@@ -197,13 +197,7 @@ exclude:
   - LICENSE
   - README.md
   - Vagrantfile
-  - 2015-02-26-flake-it-till-you-make-it.md
-  - 2015-02-13-hamlet-monologue.md
-  - 2015-01-27-dear-diary.md
-  - 2015-01-19-soccer.md
-  - 2015-01-15-pirates.md
-  -2015-01-04-first-post.md
-
+  
 # prose.io config
 prose:
   rooturl: '_posts'
